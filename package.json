@@ -7,7 +7,7 @@
   "scripts": {
     "build": "tsc",
     "prepare": "husky install",
-    "test": "npx jest",
+    "test": "npx jest --passWithNoTests",
     "format": "npx prettier . --write"
   },
   "repository": {

@@ -1,7 +1,7 @@
-# use-device-orientation
+# use-device-orientation-hooks
 
-[![npm version](https://badge.fury.io/js/use-device-orientation.svg)](https://badge.fury.io/js/use-device-orientation)
-![build](https://github.com/ryohidaka/use-device-orientation/workflows/Build/badge.svg)
+[![npm version](https://badge.fury.io/js/use-device-orientation-hooks.svg)](https://badge.fury.io/js/use-device-orientation-hooks)
+![build](https://github.com/ryohidaka/use-device-orientation-hooks/workflows/Build/badge.svg)
 [![License](https://img.shields.io/badge/license-MIT-blue.svg)](https://opensource.org/licenses/MIT)
 
 [![ko-fi](https://ko-fi.com/img/githubbutton_sm.svg)](https://ko-fi.com/B0B6TVH92)
@@ -17,13 +17,13 @@ A React hook to obtain device orientation using DeviceOrientationEvent.
 You can install this library using npm:
 
 ```shell
-npm install use-device-orientation
+npm install use-device-orientation-hooks
 ```
 
 ## Usage
 
 ```tsx
-import { useDeviceOrientation } from "use-device-orientation";
+import { useDeviceOrientation } from "use-device-orientation-hooks";
 
 function App() {
   const [deviceOrientation, toggle] = useDeviceOrientation();

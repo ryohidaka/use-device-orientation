@@ -1,5 +1,5 @@
 {
-  "name": "use-device-orientation",
+  "name": "use-device-orientation-hooks",
   "version": "0.1.0",
   "description": "A React hook to obtain device orientation using DeviceOrientationEvent.",
   "keywords": [
@@ -18,14 +18,14 @@
   },
   "repository": {
     "type": "git",
-    "url": "git+https://github.com/ryohidaka/use-device-orientation.git"
+    "url": "git+https://github.com/ryohidaka/use-device-orientation-hooks.git"
   },
   "author": "ryohidaka",
   "license": "MIT",
   "bugs": {
-    "url": "https://github.com/ryohidaka/use-device-orientation/issues"
+    "url": "https://github.com/ryohidaka/use-device-orientation-hooks/issues"
   },
-  "homepage": "https://github.com/ryohidaka/use-device-orientation#readme",
+  "homepage": "https://github.com/ryohidaka/use-device-orientation-hooks#readme",
   "devDependencies": {
     "@types/jest": "^29.5.12",
     "@types/react": "^18.2.52",

@@ -14,13 +14,22 @@ const detectDeviceOrientation = new DetectDeviceOrientation();
  * The orientation is updated whenever the device orientation changes.
  * @returns {Orientation} The current device orientation.
  */
-export const useDeviceOrientation = () => {
+export const useDeviceOrientation = (): [Orientation, () => void] => {
   // State to hold the current device orientation
   const [deviceOrientation, setDeviceOrientation] = useState<Orientation>(
     DEFAULT_DEVICE_ORIENTATION,
   );
 
+  // State to hold the active status
+  const [active, setActive] = useState(true);
+
   useEffect(() => {
+    if (!active) {
+      // Clean up the device orientation detection when active is false
+      detectDeviceOrientation.reset();
+      return;
+    }
+
     // Initialize the device orientation detection
     detectDeviceOrientation.init((orientation) => {
       // Update the device orientation state
@@ -38,8 +47,12 @@ export const useDeviceOrientation = () => {
     return () => {
       detectDeviceOrientation.reset();
     };
-  }, []);
+  }, [active]);
+
+  const toggle = () => {
+    setActive(!active);
+  };
 
   // Return the current device orientation
-  return deviceOrientation;
+  return [deviceOrientation, toggle];
 };

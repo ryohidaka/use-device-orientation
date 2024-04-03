@@ -1,6 +1,6 @@
 {
   "name": "use-device-orientation-hooks",
-  "version": "1.0.0",
+  "version": "1.1.0",
   "description": "A React hook to obtain device orientation using DeviceOrientationEvent.",
   "keywords": [
     "react",

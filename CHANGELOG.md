@@ -1,5 +1,12 @@
 # Changelog
 
+## [1.1.0](https://github.com/ryohidaka/use-device-orientation-hooks/compare/v1.0.0...v1.1.0) (2024-04-03)
+
+
+### Features
+
+* Change Bandler to Vite. ([8af6706](https://github.com/ryohidaka/use-device-orientation-hooks/commit/8af67067d9aac5cf91ad9eb521d016962f58ec97))
+
 ## 1.0.0 (2024-02-05)
 
 
